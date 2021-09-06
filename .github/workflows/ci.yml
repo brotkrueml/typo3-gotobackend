@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - 'Documentation/**'
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - 'Documentation/**'
+      - '**.md'
+
+jobs:
+  build:
+    name: Build PHP/TYPO3
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions:
+          - '7.4'
+        typo3-versions:
+          - '^10'
+          - '^11'
+        include:
+          - php-versions: '7.2'
+            typo3-versions: '^10'
+          - php-versions: '7.3'
+            typo3-versions: '^10'
+          - php-versions: '8.0'
+            typo3-versions: '^11'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Setup PHP version
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: fileinfo gd intl json mbstring mysqli openssl pcre pdo session xml zip zlib
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Cache composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-composer-
+      - name: Install composer dependencies
+        run: |
+          composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress
+      - name: Run PHP linter
+        run: |
+          find . -name \*.php  ! -path "./.Build/*" -exec php -l {} \;
+  xliff-validation:
+    name: XLIFF validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Install package
+        run: |
+          sudo apt-get -y install libxml2-utils
+      - name: Validate XLIFF files
+        run: |
+          make xlf-lint

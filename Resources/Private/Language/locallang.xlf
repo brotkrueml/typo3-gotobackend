@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:gotobackend/Resources/Private/Language/AdminPanel.xlf" date="2021-08-31T17:10:34Z" product-name="gotobackend">
+		<body>
+			<trans-unit id="edit" resname="edit">
+				<source><![CDATA[Edit]]></source>
+			</trans-unit>
+			<trans-unit id="editPageInBackend" resname="editPageInBackend">
+				<source><![CDATA[Edit page in backend]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

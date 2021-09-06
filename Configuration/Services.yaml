@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Brotkrueml\GoToBackend\:
+    resource: '../Classes/*'
+
+  Brotkrueml\GoToBackend\AdminPanel\EditModule:
+    public: true
