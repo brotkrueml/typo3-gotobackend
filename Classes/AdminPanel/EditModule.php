@@ -22,7 +22,9 @@ use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 final class EditModule extends AbstractModule implements PageSettingsProviderInterface
 {
-    /** @var UriBuilder */
+    /**
+     * @var UriBuilder
+     */
     protected $uriBuilder;
 
     public function __construct(UriBuilder $uriBuilder)

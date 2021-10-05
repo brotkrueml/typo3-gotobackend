@@ -1,9 +1,9 @@
 .PHONY: qa
-qa: coding-standards yaml-lint
+qa: cs yaml-lint
 
-.PHONY: coding-standards
-coding-standards: vendor
-	.Build/bin/php-cs-fixer fix --config=.php_cs --diff
+.PHONY: cs
+cs: vendor
+	.Build/bin/ecs check  --fix
 
 vendor: composer.json composer.lock
 	composer validate
