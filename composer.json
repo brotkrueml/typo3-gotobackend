@@ -20,7 +20,8 @@
 	},
 	"require-dev": {
 		"brotkrueml/coding-standards": "~1.1.0",
-		"ergebnis/composer-normalize": "^2.15"
+		"ergebnis/composer-normalize": "^2.15",
+		"symfony/yaml": "^4.4 || ^5.3"
 	},
 	"config": {
 		"bin-dir": ".Build/bin",
