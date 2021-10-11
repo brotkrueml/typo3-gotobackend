@@ -4,7 +4,7 @@
 
 Add a button in Admin Panel to jump from a frontend page into the according backend area.
 
-The extension supports TYPO3 v10 LTS and TYPO3 v11.3+.
+The extension supports TYPO3 v10 LTS and TYPO3 v11 LTS.
 
 <!--
 [Documentation](https://docs.typo3.org/p/brotkrueml/typo3-gotobackend/master/en-us/) |
