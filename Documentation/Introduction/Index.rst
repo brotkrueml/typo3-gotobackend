@@ -31,6 +31,8 @@ Screenshots
 Credits
 =======
 
-Special thanks go to the maintainers of the `Frontend editing extension (feedit)
-<https://extensions.typo3.org/extension/feedit>`_ where this function was taken
-from.
+Special thanks go to the maintainers of the `Frontend editing extension (feedit)`_
+where this function was taken from.
+
+
+.. _Frontend editing extension (feedit): https://extensions.typo3.org/extension/feedit
