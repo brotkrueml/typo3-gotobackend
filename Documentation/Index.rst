@@ -25,7 +25,8 @@ Go To Backend
    This extension documentation is published under the `CC BY-NC-SA 4.0`_
    (Creative Commons) license
 
-Matomo integration for TYPO3
+Add a button in Admin Panel to jump from a frontend page into the according
+backend area.
 
 **TYPO3**
 
