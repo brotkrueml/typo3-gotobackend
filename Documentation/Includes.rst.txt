@@ -1,17 +1,5 @@
-﻿.. This is 'Includes.txt'. It is included at the very top of each and
-   every ReST source file in THIS documentation project (= manual).
-
-.. role:: html(code)
-.. role:: js(code)
-.. role:: php(code)
-.. role:: sep (strong)
-.. role:: shell(code)
-.. role:: sql(code)
-.. role:: typoscript(code)
-.. role:: yaml(code)
-
-.. role:: ts(typoscript)
-   :class: typoscript
-
-.. default-role:: code
-.. highlight:: php
+﻿..  attention::
+    This extension has been marked as obsolete.
+    With TYPO3 v12.0 this feature was added to the admin panel directly. So
+    there is no need for a v12 compatible version of this extension:
+    :ref:`changelog:feature-97326`.

@@ -37,8 +37,6 @@ a GNU/GPL CMS/Framework available from `typo3.org`_.
 
 This documentation is for the TYPO3 extension gotobackend.
 
-If you find an error or something is missing, please: `Report a Problem`_
-
 **For Contributors**
 
 You are welcome to help improve this guide.
@@ -50,10 +48,8 @@ Just click on "Edit me on GitHub" on the top right to submit your change request
    Introduction/Index
    Installation/Index
    Configuration/Index
-   Sitemap
 
 
 .. _CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/
-.. _Report a Problem: https://github.com/brotkrueml/typo3-gotobackend/issues/new/choose
 .. _typo3.org: https://typo3.org/
 .. _typo3.slack.com: https://typo3.slack.com/

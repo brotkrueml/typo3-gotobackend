@@ -30,7 +30,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "1.0.x-dev"
+			"dev-master": "1.1.x-dev"
 		},
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
@@ -44,7 +44,6 @@
 		}
 	},
 	"support": {
-		"issues": "https://github.com/brotkrueml/typo3-gotobackend/issues",
 		"source": "https://github.com/brotkrueml/typo3-gotobackend",
 		"docs": "https://docs.typo3.org/p/brotkrueml/typo3-gotobackend/master/en-us/"
 	}

@@ -19,11 +19,6 @@ tree to edit a page.
 The user's access rights are taken into account - so if they do not have
 permission to edit a page, the :guilabel:`Edit` section is not available.
 
-.. note::
-   With TYPO3 v12.0 this feature was added to the admin panel directly. So
-   there is no need for a v12 compatible version of this extension:
-   :ref:`changelog:feature-97326`
-
 
 Screenshots
 ===========
