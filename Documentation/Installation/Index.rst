@@ -22,8 +22,6 @@ your Composer-based TYPO3 project root, simply enter::
 and the current version will be installed.
 
 You can also install the extension from the `TYPO3 Extension Repository (TER)`_.
-See :ref:`t3install:extension-installation` for instructions on how to install
-an extension.
 
 The extension offers some configuration options, which are explained in the
 chapter :ref:`Configuration <Configuration>`.
